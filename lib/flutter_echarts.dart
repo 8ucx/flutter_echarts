@@ -102,8 +102,15 @@ class _EchartsState extends State<Echarts> {
     }
   }
 
-  Future<void> evaluateJavascript(String js) {
-    return _controller.evaluateJavascript(js);
+  Future<void> evaluateJavascript(String js) async {
+    if (_controller == null) {
+      return;
+    }
+    try {
+      await _controller.evaluateJavascript(js);
+    } catch (e) {
+      print('忽略調用chart js時出現的所有問題 - $e');
+    }
   }
 
   @override

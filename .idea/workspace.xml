@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7f9792-0cd7-4b40-a91b-fca35a777be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/chart_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_echarts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_echarts.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_echarts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_echarts.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -93,12 +93,17 @@ class _EchartsState extends State<Echarts> {
   void update(String preOption) async {
     _currentOption = widget.option;
     if (_currentOption != preOption) {
-      await _controller?.evaluateJavascript('''
+      try {
+        await _controller?.evaluateJavascript('''
         try {
           chart.setOption($_currentOption, true);
         } catch(e) {
         }
       ''');
+      } catch (e) {
+        print('忽略更新chart js時出現的所有問題 - $e');
+      }
+
     }
   }
 
